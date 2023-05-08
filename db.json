@@ -1,0 +1,102 @@
+{
+  "cliente": [
+    {
+      "id": 1,
+      "nombre": "Eduardo",
+      "apellido": "Mantilla",
+      "edad": 22,
+      "documento": 1234,
+      "genero": "Masculino"
+    },
+    {
+      "id": 2,
+      "nombre": "Omar",
+      "apellido": "Rodriguez",
+      "edad": 27,
+      "documento": 56789,
+      "genero": "Masculino"
+    },
+    {
+      "id": 3,
+      "nombre": "Sofia",
+      "apellido": "Alvarez",
+      "edad": 33,
+      "documento": 1405,
+      "genero": "Femenino"
+    }
+  ],
+  "producto": [
+    {
+      "id": 1,
+      "producto": "Portatil Gaming",
+      "descripcion": "Portatil Gaming",
+      "categoriaId": "1"
+    },
+    {
+      "id": 4,
+      "producto": "Router Wifi ",
+      "descripcion": "Dispositivo inalambrico",
+      "categoriaId": "4"
+    },
+    {
+      "id": 2,
+      "producto": "Computador Hp",
+      "descripcion": "Computador Hogar ",
+      "categoriaId": "4"
+    },
+    {
+      "id": 3,
+      "producto": "Pc Empresarial",
+      "descripcion": "Pc empresarial de alto rendimiento",
+      "categoriaId": "2"
+    }
+  ],
+  "categoria": [
+    {
+      "id": 1,
+      "codigo": "2001",
+      "categoria": "Portatil"
+    },
+    {
+      "id": 2,
+      "codigo": "2002",
+      "categoria": "Pc empresarial"
+    },
+    {
+      "id": 3,
+      "codigo": "2003",
+      "categoria": "Computador de escritorio"
+    },
+    {
+      "id": 4,
+      "codigo": "2003",
+      "categoria": "Dispositivos inalambricos"
+    }
+  ],
+  "venta": [
+    {
+      "id": 1,
+      "codigo": 4001,
+      "descripcion": "Compra pc gaming por ser su fecha de cumpleaños",
+      "fechaCompra": "6/5/2023",
+      "idCliente": 1,
+      "idProducto": 1
+    },
+    {
+      "id": 2,
+      "codigo": 4002,
+      "descripcion": "Compra pc empresarial",
+      "fechaCompra": "24/4/2023",
+      "idCliente": 2,
+      "idProducto": 3
+    },
+    {
+      "id": 3,
+      "codigo": 4003,
+      "descripcion": "Router Wifi para su hogar de descanso",
+      "fechaCompra": "29/4/2023",
+      "idCliente": 3,
+      "idProducto": 2
+    }
+  ]
+}

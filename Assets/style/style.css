@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*ESTILOS DEL BODY*/
+body{
+    background-color: #f2f2f2;
+}
+
+/*ESTILOS DEL MAIN */ 
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*ESTILOS DE PRODUCTOS*/
+.tablas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #5DADE2;
+    padding: 30px 0;
+}
+.cont_tablas{
+    width: 1200px;
+    background-color: #fff;
+    padding: 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cont_tablas h2{
+    width: 100%;
+}
+.cont_tablas table{
+    width: 70%;
+}
+.cont_tablas .form{
+    width: 30%;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(54, 50, 51);
+    font-family: sans-serif;
+    width: 300px;
+    height: 300px;
+    background-color: #A2D9CE;
+}
+td button{
+    padding: 0 5px;
+    color: orange;
+    font-size: 17px;
+    border: 0;
+    background-color: #F1C40F;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+td button:first-child{
+    background-color: #E74C3C;
+}
+
+.editarProducto{
+    padding-top: 10px;
+}
+
+
+/*ESTILOS DEL MY-HEADER*/
+my-registrar{
+    width: 100%;
+}
