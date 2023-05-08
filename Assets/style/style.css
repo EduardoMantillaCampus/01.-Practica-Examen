@@ -74,3 +74,12 @@ td button:first-child{
 my-registrar{
     width: 100%;
 }
+
+/*FILTROS*/
+.filtros{
+    width: 100%;
+}
+
+.filtros button{
+    width: 60px;
+}

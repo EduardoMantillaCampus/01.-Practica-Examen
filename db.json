@@ -27,27 +27,15 @@
   ],
   "producto": [
     {
-      "id": 1,
-      "producto": "Portatil Gaming",
-      "descripcion": "Portatil Gaming",
-      "categoriaId": "1"
-    },
-    {
       "id": 4,
       "producto": "Router Wifi ",
       "descripcion": "Dispositivo inalambrico",
       "categoriaId": "4"
     },
     {
-      "id": 2,
-      "producto": "Computador Hp",
-      "descripcion": "Computador Hogar ",
-      "categoriaId": "4"
-    },
-    {
-      "id": 3,
-      "producto": "Pc Empresarial",
-      "descripcion": "Pc empresarial de alto rendimiento",
+      "id": 5,
+      "producto": "Pc Prueba",
+      "descripcion": "Descripcion del pc",
       "categoriaId": "2"
     }
   ],

@@ -107,6 +107,36 @@ const showCategorias = async()=>{
         return "Error => "+e;
     }
 }
+const buscarProductos = async(palabra)=>{
+    try{
+        let plantilla="";
+        let respuesta = await fetch(`http://localhost:4002/producto?producto_like=${palabra}`);
+        const data = await respuesta.json();
+        for(const dat in data){
+            
+            let categorias = await fetch(`http://localhost:4002/categoria/${data[dat].categoriaId}`);
+            const categoria = await categorias.json();
+
+            plantilla +=
+            `
+            <tr>
+                <th scope="row">${data[dat].id}</th>
+                <td>${data[dat].producto}</td>
+                <td>${data[dat].descripcion}</td>
+                <td>${categoria.categoria}</td>
+                <td>
+                    <button href="#" id='${data[dat].id}' class="btnEliminar">Eliminar</button>
+                    <button href="#" id='${data[dat].id}' class="btnEditarProducto">Editar</button>
+                </td>
+            </tr>
+            `;
+        }
+        return plantilla
+    }catch(e){
+        return "Error => "+e;
+    }
+}
+
 self.addEventListener('message', async function(event){
     let data = "";
     switch(event.data.type){
@@ -127,7 +157,10 @@ self.addEventListener('message', async function(event){
         break;
         case "showCategorias":
             data = await showCategorias();
-        break;
+        break; 
+        case "buscarProductos":
+            data = await buscarProductos(event.data.data);
+        break; 
     }
 
     self.postMessage(data);
